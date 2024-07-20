@@ -120,6 +120,8 @@ services:
     ports:
       - "8000:8000"
 
+      
+
 # Commonds is used to build yml file
 
 docker-compose up -d --build
@@ -131,9 +133,13 @@ docker-compose build --no-cache
 ### Step 5: Structure Your Project
 .
 ├── Dockerfile
+
 ├── docker-compose.yml
+
 ├── requirements.txt
+
 ├── main.py
+
 └── data
 
 
