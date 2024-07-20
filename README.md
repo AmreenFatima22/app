@@ -213,5 +213,4 @@ docker stop interesting_lederberg
 6. Starts the services defined in `docker-compose.yml` in detached mode.
 
 docker-compose up -d
-    # NIMAP-fork
-# NIMAP-fork
+ 
