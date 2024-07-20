@@ -62,7 +62,7 @@ COPY requirements.txt ./
 
 RUN pip install --no-cache-dir --no-deps -r requirements.txt
 
-# Copy the rest of the application code into the container at /usr/src/app
+* Copy the rest of the application code into the container at /usr/src/app *
 COPY . .
 
 # Command to run the app
@@ -133,13 +133,9 @@ docker-compose build --no-cache
 ### Step 5: Structure Your Project
 .
 ├── Dockerfile
-
 ├── docker-compose.yml
-
 ├── requirements.txt
-
 ├── main.py
-
 └── data
 
 
