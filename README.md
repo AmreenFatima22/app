@@ -177,3 +177,5 @@ These is the data Before destroying the previous containers
 After destrying the containers i recreated the containers these is the output
 
 ![6114142690867264189](https://github.com/user-attachments/assets/d860eeb1-1c6d-4900-a2e8-8846e4b3cb5f)
+
+Previous data was still existed
