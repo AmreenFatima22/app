@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO = 'https://github.com/jayan/docker-fastapi-test.git'
+        GIT_REPO = 'https://github.com/tanmayambekar123/docker-fastapi-test.git'
     }
 
     stages {
