@@ -13,5 +13,5 @@ RUN pip install --no-cache-dir --no-deps -r requirements.txt
 # Copy the rest of the application code into the container at /usr/src/app
 COPY . .
 
-# Command to run the app
+# Command to run the ap
 CMD ["python", "./your-app-script.py"]
