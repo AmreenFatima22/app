@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    environment {
+        GIT_REPO = 'https://github.com/jayan/docker-fastapi-test.git'
+    }
+
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from GitHub
+                checkout([
+                    $class: 'GitSCM', 
+                    branches: [[name: '*/main']], 
+                    userRemoteConfigs: [[url: "${env.GIT_REPO}"]]
+                ])
+            }
+        }
+        stage('Deploy') {
+            steps {
+                // Run docker compose up --build -d
+                sh 'docker compose up --build -d'
+            }
+        }
+    }
+}
