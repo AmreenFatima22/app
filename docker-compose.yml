@@ -1,0 +1,11 @@
+
+services:
+  fastapi-app:
+    build:
+      context: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app/data/:/app/app/data # Mounting the data directory for persistence
+    restart: always
+
